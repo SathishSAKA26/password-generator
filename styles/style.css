@@ -48,8 +48,15 @@ html {
 }
 
 body {
+  height: 100vh;
   font-family: "Fira Sans Condensed", sans-serif;
-  background-color: var(--clr-white);
+  background-image: url(../images/sunset_312-wallpaper-3840x2160.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* global css */
@@ -65,4 +72,73 @@ a {
 
 li {
   list-style: none;
+}
+
+.container {
+  background: #ffffff36;
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 6px 6px 15px #ffffff3d;
+}
+
+.title {
+  text-align: center;
+  color: var(--clr-grey-1);
+}
+
+.wrapper .input-box {
+  position: relative;
+}
+
+.input {
+  padding: 0.4rem 5rem;
+  letter-spacing: 1.4px;
+  border-radius: 8px;
+}
+
+.copy {
+  cursor: pointer;
+  font-size: 1rem;
+  position: absolute;
+  right: 25px;
+  line-height: 35px;
+}
+
+.input-box {
+  padding-bottom: 1.3rem;
+}
+
+.sub-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--clr-grey-1);
+}
+
+.range {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.options {
+  display: flex;
+  gap: 2rem;
+}
+
+.option {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px;
+  color: var(--clr-grey-1);
+}
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--clr-grey-2);
+  margin-top: 0.5rem;
+  margin-left: 1.1rem;
+  padding: 0.2rem 5rem;
+  border-radius: 8px;
+  background-color: var(--clr-red-light);
+  cursor: pointer;
 }
