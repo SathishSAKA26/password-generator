@@ -6,14 +6,14 @@ const options = document.querySelectorAll(".option input");
 const copyIcon = document.querySelector(".input-box span");
 const passwordInput = document.querySelector(".input-box input");
 const passIndicator = document.querySelector(".pass-indicator");
-const generateBtn = document.querySelector(".generator");
+const generateBtn = document.querySelector(".btn-generator");
 
 // value
 const characters = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
   uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers: "0123456789",
-  Symbol: "!$%&|[](){}:;,.*+-#<>~",
+  symbol: "!$%&|[](){}:;,.*+-#<>~",
 };
 
 // functions
@@ -21,7 +21,7 @@ const generatePassword = () => {
   let staticPassword = "",
     randomPassword = "",
     excludeDuplicate = false,
-    PassLength = lengthSlider.value;
+    passLength = lengthSlider.value;
 
   options.forEach((option) => {
     if (option.checked) {
@@ -35,7 +35,7 @@ const generatePassword = () => {
     }
   });
 
-  for (let i = 0; i < PassLength; i++) {
+  for (let i = 0; i < passLength; i++) {
     let randomChar =
       staticPassword[Math.floor(Math.random() * staticPassword.length)];
     if (excludeDuplicate) {
@@ -72,7 +72,7 @@ const copyPassword = () => {
   copyIcon.style.color = "#420544";
   setTimeout(() => {
     copyIcon.innerText = "copy_all";
-    copyIcon.style.color = "#767070";
+    copyIcon.style.color = "#000";
   }, 1500);
 };
 

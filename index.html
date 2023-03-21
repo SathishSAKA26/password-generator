@@ -35,54 +35,56 @@
         </div>
         <div class="pass-indicator">
           <div class="pass-length">
-            <label class="sub-title">Password Length</label>
-            <span></span>
+            <div class="details">
+              <label class="sub-title">Password Length</label>
+              <span></span>
+            </div>
+
+            <input
+              type="range"
+              min="1"
+              max="30"
+              value="15"
+              step="1"
+              class="range"
+            />
           </div>
-          <input
-            type="range"
-            name=""
-            min="1"
-            max="30"
-            value="15"
-            step="1"
-            class="range"
-          />
+          <div class="pass-setting">
+            <label class="sub-title">Password Setting</label>
+            <ul class="options">
+              <div class="op-1">
+                <li class="option">
+                  <input type="checkbox" name="" id="lowercase" />
+                  <label for="lowercase">Lowercase (a-z)</label>
+                </li>
+                <li class="option">
+                  <input type="checkbox" name="" id="uppercase" />
+                  <label for="uppercase">Uppercase (A-Z)</label>
+                </li>
+                <li class="option">
+                  <input type="checkbox" name="" id="numbers" />
+                  <label for="numbers">Numbers (0-9)</label>
+                </li>
+              </div>
+              <div class="op-2">
+                <li class="option">
+                  <input type="checkbox" name="" id="symbols" />
+                  <label for="symbols">Symbols (!-$^+)</label>
+                </li>
+                <li class="option">
+                  <input type="checkbox" name="" id="exc-dulicate" />
+                  <label for="exc-dulicate">Exclude Duplicate</label>
+                </li>
+                <li class="option">
+                  <input type="checkbox" name="" id="spaces" />
+                  <label for="spaces">Include Spaces</label>
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
-        <div class="pass-setting">
-          <label class="sub-title">Password Setting</label>
-          <ul class="options">
-            <div class="op-1">
-              <li class="option">
-                <input type="checkbox" name="" id="lowercase" />
-                <label for="lowercase">Lowercase (a-z)</label>
-              </li>
-              <li class="option">
-                <input type="checkbox" name="" id="uppercase" />
-                <label for="uppercase">Uppercase (A-Z)</label>
-              </li>
-              <li class="option">
-                <input type="checkbox" name="" id="numbers" />
-                <label for="numbers">Numbers (0-9)</label>
-              </li>
-            </div>
-            <div class="op-2">
-              <li class="option">
-                <input type="checkbox" name="" id="symbols" />
-                <label for="symbols">Symbols (!-$^+)</label>
-              </li>
-              <li class="option">
-                <input type="checkbox" name="" id="exc-dulicate" />
-                <label for="exc-dulicate">Exclude Duplicate</label>
-              </li>
-              <li class="option">
-                <input type="checkbox" name="" id="spaces" />
-                <label for="spaces">Include Spaces</label>
-              </li>
-            </div>
-          </ul>
-        </div>
+        <button class="btn-generator">Generator Password</button>
       </div>
-      <button class="btn generator">Generator Password</button>
     </div>
 
     <!-- custom script -->

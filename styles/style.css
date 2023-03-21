@@ -91,9 +91,12 @@ li {
 }
 
 .input {
-  padding: 0.4rem 5rem;
+  text-align: start;
+  padding: 0.4rem 4rem;
   letter-spacing: 1.4px;
   border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .copy {
@@ -131,7 +134,7 @@ li {
   color: var(--clr-grey-1);
 }
 
-.btn {
+.btn-generator {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--clr-grey-2);
@@ -141,4 +144,15 @@ li {
   border-radius: 8px;
   background-color: var(--clr-red-light);
   cursor: pointer;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pass-length span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--clr-primary-4);
 }
